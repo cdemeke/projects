@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Underwear Calculator</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="author">
+   <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrapValidator.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+  <!-- Fav and touch icons -->
+  <link href="img/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+  <link href="img/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+  <link href="img/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+  <link href="img/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+  <link href="img/favicon.png" rel="shortcut icon">
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/scripts.js" type="text/javascript"></script>
+  <script src="js/bootstrapValidator.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+
+  <div class="container row clearfix col-md-12 column">
+    <div class="jumbotron">
+      <h1 class="comic_Font2 text-center" style="color:#ffffff;">Captain Underpants</h1>
+
+      <div class="clearfix md"></div>
+
+      <h3 class="comic_Font underPants" style="">(Underwear)(Calculator)</h3>
+    </div>
+
+    <div class="row clearfix" style="heigt:100%;">
+      <div class="col-md-4 col-md-offset-2 column">
+      <div class="col-xs-2 col-md-offset-1 column"></div><img alt="Captain Underpants" height="400" src="img/captain_underpants.png" width=""></div><!--Input Value-->
+
+      <div class="col-md-6 column vcenter" id="inputDisplay" style="">
+        <form class="form-horizontal rightInput" id="dynamicOptionForm" name="dynamicOptionForm" style="">
+          <div class="form-group col-sm-10">
+            <input class="form-control submitDays" id="inputVal" name="numFloors" placeholder="How many days will you be away?" type="text"> <button class="btn btn-primary" id="buttonSubmit" style="height:49px; width:15%; margin-left:3px;" type="submit"><i class="icon-user icon-white"></i>Go</button>
+          </div>
+        </form>
+      </div><!--Submitted Value-->
+
+      <div class="col-md-6 column vcenter" id="inputResults" style="display:none;">
+        <form class="form-horizontal rightInput" id="dynamicOptionForm" name="dynamicOptionForm" style="">
+          <div class="form-group col-sm-10">
+            <p class="comic_Font2">For a <span id="msg"></span> day trip, Captain Underpants recommeds you pack <label id="msgRecommendation"></label> pairs of undies, for a clean booty, without over packing and no washing!</p><br>
+
+            <p></p>
+
+            <h4 style="text-align:center;color:white;">Recommendation table</h4>
+            <p>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th># of Washes</th>
+
+                  <th>Recommendation</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="success">
+                  <td>0</td>
+
+                  <td><label id="msgRecommendation_NoWash"></label> pairs of underwear</td>
+                </tr>
+
+                <tr class="warning">
+                  <td>1</td>
+
+                  <td><label id="msgRecommendation_OneWash"></label> pairs of underwear</td>
+                </tr>
+
+                <tr class="danger">
+                  <td>2</td>
+
+                  <td><label id="msgRecommendation_TwoWash"></label> pairs of underwear</td>
+                </tr>
+              </tbody>
+            </table><a href="#"><button class="btn btn-primary" id="buttonSubmit2" style=" margin-left:3px;" type="submit">Return</button></a><br>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="clearfix" style="padding-bottom:5%;"></div><a class="btn" data-toggle="modal" href="#modal-container-650638" id="modal-650638"><button class="btn btn-danger" type="button">About</button></a><br>
+
+    <div class="modal fade modal-dialog modal-content" id="modal-container-650638">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal" type="button">×</button>
+
+        <h4 class="modal-title" id="myModalLabel">About & Disclaimer</h4>
+      </div>
+
+      <div class="modal-body">
+        <label style="font-weight: normal;">This site was inspired by the article, <a href="https://medium.com/@sofauxboho/pack-like-a-nerd-2157aa39738f" style="font-style: italic" target="_blank">Pack Like a Nerd</a> by Reed Kennedy. It is meant to be fun and hopefully useful. Especially for my friends who travel a lot and don’t like over packing.<br>
+        <br>
+        <b>Disclaimer:</b> I do not own the rights to the legendary <span style="text-decoration: underline">Captain Underpants</span>: Name, Logo, Image, or Font. The credits go to the respective owners. I guess, I should probably put this here somewhere too © and this ®.</label>
+      </div>
+
+      <div class="modal-footer">
+        <label style="font-weight: normal;">Built by: <a href="http://cdemeke.com/" target="_blank">Chris Demeke</a> | <a href="https://twitter.com/chrisdemeke" target="_blank">Twitter</a> | <a href="http://instagram.com/demeke2" target="_blank">Instagram</a></label><br>
+      </div>
+    </div>
+  </div><script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-37913565-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+  </script>
+</body>
+</html>

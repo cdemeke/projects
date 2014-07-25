@@ -1,0 +1,108 @@
+body {
+background-color: #051e46;
+background-position: center center;
+background-repeat: no-repeat;
+background: -webkit-gradient(radial, center center, 0, center center, 460, from(#34568f), to(#051e46));
+background: -webkit-radial-gradient(circle, #34568f, #051e46);
+background: -moz-radial-gradient(circle, #34568f, #051e46);
+background: -ms-radial-gradient(circle, #34568f, #051e46);
+height: 900px;
+}
+
+.jumbotron{
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+p{
+width: 100%;
+text-align: center;
+font-size: 1.5em;
+color:#fff;
+text-shadow: 2px 2px 1px #000000;
+}
+
+#msg, #msgRecommendation{
+	/*text-decoration:underline;*/
+	font-style:italic;
+	font-weight: bold;
+	color:#A2A2A2;
+	margin-left: 0px;
+}
+
+
+
+@font-face {
+  font-family: "Statictext";
+  src: url('../fonts/BATMAN.TTF');
+}
+
+
+.comic_Font{
+  font-family: 'Statictext', "Comic Sans MS", cursive, sans-serif  !important;
+
+}
+
+@font-face {
+  font-family: "Comic-bubble2";
+  src: url('../fonts/Minnie.TTF');
+}
+
+
+.comic_Font2{
+  font-family: 'Comic-bubble2', "Comic Sans MS", cursive, sans-serif  !important;
+
+}
+
+
+.underPants{
+			margin-right:0%;
+			text-align: center;
+			color:#000000;
+
+}
+
+.vcenter {
+	display:table; 
+	height:450px;
+}
+
+.rightInput{
+
+	display:table-cell;
+	height:100%; 
+	vertical-align:middle;
+}
+
+.submitDays{
+	 background-position: 100% 50%; 
+	 background-repeat: no-repeat; 
+	 vertical-align: middle; 
+	 width:83%; 
+	 height:49px;
+	 float:left; 
+	 font-size: 100%; 
+	 font-style: italic;
+}
+
+td,th{text-align: center;}
+th{color:#eee;}
+
+@media (min-width: 1200px) {
+
+		
+	}
+
+@media (max-width: 989px) {
+.vcenter {
+	display:block; 
+	height:100%;
+}
+.rightInput{
+
+	display:block;
+	height:100%; 
+	vertical-align:top;
+}
+
+		
+	}
