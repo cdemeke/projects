@@ -1,0 +1,35 @@
+<link rel="import" href="../bower_components/core-scaffold/core-scaffold.html">
+<link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
+<link rel="import" href="../bower_components/core-menu/core-menu.html">
+<link rel="import" href="../bower_components/core-item/core-item.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../bower_components/core-icon/core-icon.html">
+<link rel="import" href="../bower_components/core-header-panel/core-header-panel.html">
+
+<polymer-element name="all-page" noscript>
+<template>
+<style>
+    :host #core_toolbar {
+        color: white;
+    }
+
+    :host paper-item.core-selected {
+        color: #004b8d;
+    }
+
+    :host #side_menu {
+        margin-left: 30px;
+    }
+</style>
+
+<core-scaffold>
+    <core-header-panel navigation flex mode="seamed">
+        <core-toolbar id="core_toolbar"></core-toolbar>
+            <core-menu id="side_menu">
+                <paper-item icon="settings">Hey</core-item>
+                <paper-item icon="settings">Hi</core-item>
+            </core-menu>
+    </core-header-panel>
+</core-scaffold>
+</template>
+</polymer-element>

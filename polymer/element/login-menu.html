@@ -1,0 +1,85 @@
+<polymer-element name="login-menu">
+
+<template>
+
+<style>
+    html, body {
+        height: 100%;
+        font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+        margin: 0;
+        padding: 5px;
+    }
+
+    core-header-panel {
+        font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+        width: auto;
+        height: 500px;
+    }
+
+    paper-input {
+        margin: 1em;
+        width: auto;
+    }
+
+    paper-button {
+        margin: 1em;
+        width: 15em;
+    }
+
+    paper-button.colored {
+        color: #4285f4;
+        fill: #4285f4;
+    }
+
+    paper-button[raisedButton].colored {
+        background: #4285f4;
+        color: #fff;
+    }
+
+    paper-button[raisedButton].colored #ripple,
+    paper-button[raisedButton].colored::shadow #ripple {
+        color: #2a56c6;
+    }
+
+    paper-button[raisedButton].colored #focusBg,
+    paper-button[raisedButton].colored::shadow #focusBg {
+        background: #3367d6;
+    }
+
+    div .space {
+        height: 20px;
+    }
+</style>
+
+<core-header-panel>
+    <core-toolbar>
+        <div>Login</div>
+    </core-toolbar>
+    <div layout vertical center center-justified>
+        <paper-input floatinglabel label="User Name:"></paper-input>
+        <paper-input floatinglabel type="password" label="Password:"></paper-input>
+        <paper-button raisedButton class="colored" label="Submit" on-tap="{{submit}}"></paper-button>
+        <a href="">Forget password?</a>
+        <div class="space"></div>
+        <paper-button raisedButton label="Create Account" on-tap="{{createAccount}}"></paper-button>
+    </div>
+</core-header-panel>
+
+</template>
+
+<script>
+    Polymer('login-menu', {
+        publish: {
+        },
+        submit: function() {
+            console.log("submit");
+            this.fire('go-all-page', {selected: "all-page"});
+            console.log("go-all-page got fired from login-menu.html");
+        },
+        createAccount: function() {
+            console.log("createAccount");
+        }
+    });
+</script>
+
+</polymer-element>
