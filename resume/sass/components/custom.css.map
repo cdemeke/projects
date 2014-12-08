@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI,CACH,MAAM,CAAE,IAAI,CAYb,OAAO,CARL,QAAQ,CAAE,QAAQ,CAClB,UAAU,CAAE,GAAG,CACf,GAAG,CAAE,GAAG,CACR,iBAAiB,CAAE,gBAAgB,CACnC,aAAa,CAAE,gBAAgB,CAC/B,SAAS,CAAE,gBAAgB",
+"sources": ["custom.scss"],
+"names": [],
+"file": "custom.css"
+}
