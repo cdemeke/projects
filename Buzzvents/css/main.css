@@ -1,0 +1,362 @@
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+   
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Oxygen', "Segoe UI", "Helvetica Neue Light", Helvetica, sans-serif;
+  background: #333 url("../img/bg.jpg") center center no-repeat fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  font-weight: 300;
+}
+
+a:hover { text-decoration: none; }
+
+img { max-width: 100%; }
+
+/* ==========================================================================
+   Progress bar
+   ========================================================================== */
+   
+.progress {
+  overflow: hidden;
+  margin-bottom: 0;
+  background-color: transparent;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.progress-bar {
+  background-color: #ffcc33;
+  color: rgba(0, 0, 0, 0.69);
+  text-align: right;
+  padding-right: 2em;
+}
+
+
+/* ==========================================================================
+   Event Table Links
+   ========================================================================== */
+   
+.row .columncolor{
+  margin-top:1px;
+}
+.columncolor{
+  background:rgb(145, 145, 145);
+  text-align: center;
+  height: 44px;
+  border-right: 1px solid #ffcc33;
+  position: static;
+  font-size:18px;
+  float: right;
+  color: #ffcc33; 
+
+}
+.columncolor a {
+  color:#ffcc33;
+}
+
+
+/* ==========================================================================
+   Buttons 
+   ========================================================================== */
+.btn.active, .btn:active {
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+  }
+
+.btn-sample-relax { 
+  color: #ffffff; 
+  background-color: #0476BD; 
+  border-color: #CCCCCC; 
+  padding: 10px 45px;
+  font-family: 'Indie Flower';
+  font-size: x-large;  
+} 
+ 
+.btn-sample-relax:hover, 
+.btn-sample-relax:focus, 
+.btn-sample-relax:active, 
+.btn-sample-relax.active, 
+.open .dropdown-toggle.btn-sample-relax { 
+  color: #ffffff; 
+  background-color: #75c8fc; 
+  border-color: 3px solid #292929; 
+  -webkit-box-shadow: inset 4px 4px 1px rgba(0,0,0,0.2),0 1px 2px rgba(0,0,0,0.05);
+  border:#999;
+} 
+ 
+.btn-sample-relax:active, 
+.btn-sample-relax.active, 
+.open .dropdown-toggle.btn-sample-relax { 
+  background-image: none; 
+} 
+ 
+.btn-sample-relax.disabled, 
+.btn-sample-relax[disabled], 
+fieldset[disabled] .btn-sample-relax, 
+.btn-sample-relax.disabled:hover, 
+.btn-sample-relax[disabled]:hover, 
+fieldset[disabled] .btn-sample-relax:hover, 
+.btn-sample-relax.disabled:focus, 
+.btn-sample-relax[disabled]:focus, 
+fieldset[disabled] .btn-sample-relax:focus, 
+.btn-sample-relax.disabled:active, 
+.btn-sample-relax[disabled]:active, 
+fieldset[disabled] .btn-sample-relax:active, 
+.btn-sample-relax.disabled.active, 
+.btn-sample-relax[disabled].active, 
+fieldset[disabled] .btn-sample-relax.active { 
+  background-color: #0476BD; 
+  border-color: #CCCCCC; 
+} 
+ 
+.btn-sample-relax .badge { 
+  color: #0476BD; 
+  background-color: #ffffff; 
+
+}
+
+.btn-sample-rage { 
+  color: #ffffff; 
+  background-color: #df2323; 
+  border-color: #CCCCCC; 
+  padding: 10px 45px;
+  font-family: 'Indie Flower';
+  font-size: x-large;
+} 
+ 
+.btn-sample-rage:hover, 
+.btn-sample-rage:focus, 
+.btn-sample-rage:active, 
+.btn-sample-rage.active, 
+.open .dropdown-toggle.btn-sample-rage { 
+  color: #ffffff; 
+  background-color: #f3acac; 
+  border-color: #CCCCCC; 
+  border-color: 3px solid #292929; 
+  -webkit-box-shadow: inset 4px 4px 1px rgba(0,0,0,0.2),0 1px 2px rgba(0,0,0,0.05);
+  border:#999;
+}  
+.btn-sample-rage:active, 
+.btn-sample-rage.active, 
+.open .dropdown-toggle.btn-sample-rage { 
+  background-image: none; 
+} 
+ 
+.btn-sample-rage.disabled, 
+.btn-sample-rage[disabled], 
+fieldset[disabled] .btn-sample-rage, 
+.btn-sample-rage.disabled:hover, 
+.btn-sample-rage[disabled]:hover, 
+fieldset[disabled] .btn-sample-rage:hover, 
+.btn-sample-rage.disabled:focus, 
+.btn-sample-rage[disabled]:focus, 
+fieldset[disabled] .btn-sample-rage:focus, 
+.btn-sample-rage.disabled:active, 
+.btn-sample-rage[disabled]:active, 
+fieldset[disabled] .btn-sample-rage:active, 
+.btn-sample-rage.disabled.active, 
+.btn-sample-rage[disabled].active, 
+fieldset[disabled] .btn-sample-rage.active { 
+  background-color: #df2323; 
+  border-color: #CCCCCC; 
+} 
+ 
+.btn-sample-rage .badge { 
+  color: #df2323; 
+  background-color: #ffffff; 
+}
+
+
+/* ==========================================================================
+   animation
+   ========================================================================== */
+
+.animation-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -100;
+  width: 100%;
+}
+
+.clouds {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: transparent url("../img/clouds.png") repeat-x 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-animation: clouds 100s linear 0s infinite both;
+  -moz-animation: clouds 100s linear 0s infinite both;
+  -o-animation: clouds 100s linear 0s infinite both;
+  animation: clouds 100s linear 0s infinite both;
+}
+ @-webkit-keyframes clouds {
+ from {
+ background-position: 0 50%, 50% 50%;
+}
+ to {
+ background-position: -150em 50%, 50% 50%;
+}
+}
+ @-moz-keyframes clouds {
+ from {
+ background-position: 0 50%, 50% 50%;
+}
+ to {
+ background-position: -150em 50%, 50% 50%;
+}
+}
+@-o-keyframes clouds {
+ from {
+ background-position: 0 50%, 50% 50%;
+}
+ to {
+ background-position: -150em 50%, 50% 50%;
+}
+}
+ @keyframes clouds {
+ from {
+ background-position: 0 50%, 50% 50%;
+}
+ to {
+ background-position: -150em 50%, 50% 50%;
+}
+}
+
+/* ==========================================================================
+   Top Header styles
+   ========================================================================== */
+   
+
+.top-header { margin: 2em 0 1.5em; }
+
+.top-header h1 {
+  font-size: 2.618em;
+  font-weight: 400;
+}
+.top-header h2 {
+  font-size: 1.00em;
+  font-weight: 0;
+  
+
+}
+
+
+
+/* ==========================================================================
+   Table styles
+   ========================================================================== */
+table{
+  background: #333;
+  margin-top:50px;
+  width: 100%;
+}
+th.tName {
+  width: 40%; 
+}
+th.tBuzz{
+  display:none;
+
+}
+th.tTime{
+  width: 27%;
+}
+
+
+thead {
+  background-color: #E79E20;
+  border: 1px solid #999;  
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  xborder-collapse: collapse;
+}
+tr:nth-child(even) {
+  background-color: #6F6F6F;
+}
+
+
+tr:nth-child(odd) {
+
+}
+
+
+.table col:nth-child(1){width:100px;}
+.table col:nth-child(2){width:20px;}
+.table col:nth-child(3){width:30px;}
+/* ==========================================================================
+   social media styles
+   ========================================================================== */
+   
+.social { padding-bottom: 3em; }
+
+.social p {
+  font-size: 1.5em;
+  color: #bbb;
+}
+
+.social-icons {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  /*padding-right: 1em;*/
+}
+
+.social-icons li:last-child { padding-right: 0; }
+
+.social-icons a { color: #ffe528; }
+
+.social-icons a:hover { color: #ffe528; }
+
+
+/* ==========================================================================
+   Small devices (tablets, 768px and up)
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   Small devices (tablets, 768px and up)
+   ========================================================================== */
+
+@media (min-width: 768px) {
+
+.top-header { margin: 7.5em 0 1.5em; }
+
+.top-header h1 {
+  font-size: 3.236em;
+  font-weight: 700;
+}
+}
+
+/* ==========================================================================
+   Medium devices (desktops, 992px and up)
+   ========================================================================== */
+
+@media (min-width: 992px) {
+
+.top-header { margin: 13.5em 0 3em; }
+
+.top-header h1 { font-size: 4.236em; }
+}
